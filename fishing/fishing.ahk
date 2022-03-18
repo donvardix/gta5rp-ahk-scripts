@@ -1,4 +1,4 @@
-;Version: 1.0.2
+;Version: 1.0.3
 
 
 LButtonCheck() {
@@ -41,16 +41,20 @@ F5::
 startScript() {
     SetTimer LButtonCheck, 90
     SetTimer IRobotCheck, 5000
-    SetTimer click1, 500
+    SetTimer RButtonCheck, 500
 }
 
 stopScript() {
     SetTimer LButtonCheck, 0
     SetTimer IRobotCheck, 0
-    SetTimer click1, 0
+    SetTimer RButtonCheck, 0
 }
 
-click1() {
+RButtonCheck() {
+    ;RButtonCoordX := 1066
+    ;RButtonCoordY := 904
+    ;RButtonColor  := ""
+
     Send 1
 }
 
